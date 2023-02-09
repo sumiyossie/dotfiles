@@ -47,6 +47,9 @@ if [ -d "$HOME/.anyenv/bin" ] ; then
   fi
 fi
 
+export GOENV_DISABLE_GOPATH=1
+export GOPATH=$HOME/go
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
   # include .bashrc if it exists
@@ -56,3 +59,7 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 . "$HOME/.cargo/env"
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/home/yuki/.local/share/coursier/bin"
+# <<< coursier install directory <<<

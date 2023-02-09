@@ -154,3 +154,12 @@ fi
 #   . "$HOME/.porters.bashrc"
 # fi
 # . "$HOME/.cargo/env"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/yuki/tmp/google-cloud-sdk/path.bash.inc' ]; then . '/home/yuki/tmp/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/yuki/tmp/google-cloud-sdk/completion.bash.inc' ]; then . '/home/yuki/tmp/google-cloud-sdk/completion.bash.inc'; fi
+export TM_INFRA_DIR=~/projects/task-manager/docs
+export TM_FRONTEND_DIR=~/projects/task-manager/front
+export TM_BACKEND_DIR=~/projects/task-manager/back

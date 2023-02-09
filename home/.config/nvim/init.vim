@@ -1,4 +1,4 @@
-let g:python3_host_prog = $PYENV_ROOT.'/versions/neovim3/bin/python'
+let g:python3_host_prog = $PYENV_ROOT.'/versions/neovim/bin/python'
 let g:python_host_prog = $PYENV_ROOT.'/versions/neovim2/bin/python'
 
 let g:coc_global_extensions = [
@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
     \'coc-spell-checker',
     \'coc-restclient',
     \'coc-jedi',
+    \'coc-metals',
 \]
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -43,6 +44,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'rhysd/committia.vim'
     Plug 'lifepillar/vim-solarized8'
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'posva/vim-vue'
 
 call plug#end()
 
